@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiCoindispenser", "WebApiCoindispenser\WebApiCoindispenser.csproj", "{F7AE7D99-3FD4-488D-AE44-7A00BA890616}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject2", "TestProject2\TestProject2.csproj", "{8CB53EC5-9FEF-43BE-A86D-7B378C4E7369}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7AE7D99-3FD4-488D-AE44-7A00BA890616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7AE7D99-3FD4-488D-AE44-7A00BA890616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7AE7D99-3FD4-488D-AE44-7A00BA890616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7AE7D99-3FD4-488D-AE44-7A00BA890616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CB53EC5-9FEF-43BE-A86D-7B378C4E7369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB53EC5-9FEF-43BE-A86D-7B378C4E7369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB53EC5-9FEF-43BE-A86D-7B378C4E7369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB53EC5-9FEF-43BE-A86D-7B378C4E7369}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA423E41-C9EE-4CCA-AE5B-C8A1C644A79B}
+	EndGlobalSection
+EndGlobal
