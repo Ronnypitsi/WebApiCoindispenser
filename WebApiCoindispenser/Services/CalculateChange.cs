@@ -5,6 +5,15 @@ namespace WebApiCoindispenser.Services
     public class CalculateChange: ICalculateChange
     {
         List<changesRecord> changes = new List<changesRecord>();
+        public async Task<changesRecord> GetListChanges(List<int> coins, List<int> amounts, int highest, int sum, int goal)
+        {
+            changes = new List<changesRecord>();
+            changesRecord mincoins = new changesRecord();
+            var listchanges = Change(coins, amounts, highest, sum, goal);
+            mincoins = listchanges.MinBy(X => X.totalCount);
+            if (mincoins == null) return null;
+            return mincoins;
+        }
         public List<changesRecord> Change(List<int> coins, List<int> amounts, int highest, int sum, int goal)
         {
            
@@ -16,13 +25,16 @@ namespace WebApiCoindispenser.Services
                 changesRecord changesRecord = new changesRecord();
                 changesRecord = Display(coins, amounts);
                 changes.Add(changesRecord);
+               
                 return changes;
+                ;
             }
             //
             // See if we have too much.
             //
             if (sum > goal)
             {
+               
                 return changes;
             }
             //
